@@ -7,15 +7,19 @@ class FormInput extends Component {
       value: 'Sun'
     }
   }
-  handleChange(event){
+
+  handleChange(event) {
     this.setState({
-      value:event.target.value
+      value: event.target.value
     })
   }
+
   render() {
     return (
       <div>
-        <input type="text" value={this.state.value} onChange={this.handleChange.bind(this)}/>
+        <input type="text" value={this.state.value} onChange={ev => {
+          this.handleChange(ev)
+        }}/>
         <p>{this.state.value}</p>
       </div>
     )
