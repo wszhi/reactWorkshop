@@ -5,6 +5,8 @@ import ListHtmlTag from './component/ListHtmlTag.js'
 import GetRealDOM from './component/GetRealDOM.js'
 import FormInput from './component/FormInput.js'
 import LifeCircle from './component/LifeCircle.js'
+import CallAPI from './component/CallAPI.js'
+import $ from 'jquery'
 
 class App extends Component {
   render() {
@@ -20,6 +22,8 @@ class App extends Component {
         <FormInput/>
         <hr/>
         <LifeCircle name="World"/>
+        <hr/>
+        <CallAPI promise={$.getJSON('https://api.github.com/search/repositories?q=javascript&sort=stars')}/>
       </div>
     );
   }
