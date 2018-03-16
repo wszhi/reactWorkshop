@@ -31,7 +31,7 @@ class GetRealDOM extends Component {
           {
             this.state.visible ?
               <div>User Name:<input type="text" ref={this.refCb}/>
-                <input type="button" value="Get Input User Name" onClick={this.handleClick}/></div> : null
+                <input type="button" value="看this内容in log" onClick={this.handleClick}/></div> : null
           }
         </div>
 

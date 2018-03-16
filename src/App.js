@@ -3,6 +3,7 @@ import './App.css';
 import ListName from './component/ListName.js'
 import ListHtmlTag from './component/ListHtmlTag.js'
 import GetRealDOM from './component/GetRealDOM.js'
+import FormInput from './component/FormInput.js'
 
 class App extends Component {
   render() {
@@ -15,6 +16,7 @@ class App extends Component {
         <hr/>
         <GetRealDOM/>
         <hr/>
+        <FormInput/>
       </div>
     );
   }
